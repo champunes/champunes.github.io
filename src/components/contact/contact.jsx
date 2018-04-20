@@ -60,13 +60,13 @@ class ContactComponent extends Component {
   }
 
   submitData() {
-    return fetch('https://gitter-connect.herokuapp.com/api/message', {
+    return fetch('https://formspree.io/your@email.com', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({name: this.state.name, email: this.state.email, message: this.state.message})
+      body: JSON.stringify({name: this.state.name, _replyto: this.state.email, message: this.state.message})
     }).then(res => console.dir(res)).catch(e => console.dir(e));
   }
 
@@ -82,7 +82,7 @@ class ContactComponent extends Component {
 
       <div className="contact">
         <p className="headline">Contact</p>
-        <p>Are you nosy? Then write me a message:</p>
+        <p>¿Te interesa contactarme? Escríbeme un mensaje</p>
           <TextField hintText="Name" floatingLabelText="Name" style={{
             "width": "100%"
           }} floatingLabelFocusStyle={{

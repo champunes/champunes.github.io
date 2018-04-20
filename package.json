@@ -1,6 +1,6 @@
 {
-  "name": "personal-portfolio",
-  "homepage": "https://salomonelli.github.io/personal-portfolio",
+  "name": "champunes.github.io",
+  "homepage": "https://champunes.github.io/personal-portfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -17,6 +17,8 @@
     "validator": "7.0.0"
   },
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
     "gh-pages": "0.12.0",
     "react-scripts": "0.9.5"
   },

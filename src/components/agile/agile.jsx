@@ -7,15 +7,19 @@ class AgileComponent extends Component {
     render() {
         return (
           <div className="agile">
-              <p className="headline">Agile development</p>
+              <p className="headline">Desarrollo ágil</p>
               <p className="text-justify">
-                Excellent results can be achieved through agility.
-                Therefore I try to empower the agile concept in any aspects of life.
-                I believe that brilliant software can only be achieved through constant feedback and an open mind.
-                Self-organization of teams triggers creativity.
+                En el último año, mi empresa ha implementado estrategias de desarrollo
+                ágiles, aunque debido al tan reducido tamaño de la plantilla, los cambios
+                han sido muy tímidos aún.
+
+                He leido bibliografía sobre SCRUM y me encantaría poder formarme en esa
+                estrategia de organización porque muchos compañeros de profesión me han
+                hablado de las ventajas competitivas que supone.
                 <br /> <br />
-                Through working experience, I have become an expert on Scrum.
-                I have worked with JIRA, Confluence and classic tools like post-its.
+                Actualmente ya tengo experiencia utilizando herramientas como Slack o Trello,
+                para organizar las tareas de desarrolo. Sin embargo, me encantaría aprender
+                a utilizar herramientas kanban avanzadas y a realizar sprints de trabajo.
               </p>
           </div>
         );

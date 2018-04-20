@@ -12,6 +12,7 @@ class TimelineComponent extends Component {
         super(props);
 
         this.state = {
+          expanded0: false,
           expanded1: false,
           expanded2: false,
           expanded3: false

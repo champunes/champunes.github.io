@@ -10,13 +10,17 @@ class AgileQuoteComponent extends Component {
             <p className="quote">
               <span className="quote-marks">&ldquo;</span>
               <span className="quote-content">
-                Arise, arise, Coders of Github!
-                Fell deeds awake, fire and slaughter!
-                spear shall be shaken, shield be splintered,
-                a sword-day, a red day, ere the sun rises!
-                Ride now, ride now! Ride to Gondor!
+              La ciencia es una ecuación diferencial. La religión es una condición de frontera
               </span>
-              <span className="quote-author">- Théoden, son of Thengel</span>
+              <span className="quote-author">- Alan Turing</span>
+            </p>
+            <br />
+            <p className="quote">
+              <span className="quote-marks">&ldquo;</span>
+              <span className="quote-content">
+              La imaginación es la facultad del descubrimiento, preeminentemente. Es lo que penetra en los mundos nunca vistos a nuestro alrededor, los mundos de la ciencia.
+              </span>
+              <span className="quote-author">- Ada Lovace</span>
             </p>
           </div>
         );

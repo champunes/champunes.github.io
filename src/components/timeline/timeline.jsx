@@ -14,7 +14,8 @@ class TimelineComponent extends Component {
         this.state = {
           expanded1: false,
           expanded2: false,
-          expanded3: false
+          expanded3: false,
+          expanded4: false
         };
     }
 
@@ -34,42 +35,53 @@ class TimelineComponent extends Component {
       this.setState({expanded3: expanded3});
     };
 
+    handleExpandChange4 = (expanded4) => {
+      this.setState({expanded4: expanded4});
+    };
+
     handleExpand = () => {
       this.setState({expanded: true});
     };
 
     handleExpand2 = () => {
-      this.setState({expanded2: true});
+      this.setState({expanded3: true});
     };
 
     handleExpand3 = () => {
-      this.setState({expanded3: true});
+      this.setState({expanded4: true});
     };
 
     handleReduce = () => {
       this.setState({expanded1: false});
     };
 
-    handleReduce2 = () => {
+    handleReduce = () => {
       this.setState({expanded2: false});
     };
 
-    handleReduce3 = () => {
+    handleReduce2 = () => {
       this.setState({expanded3: false});
+    };
+
+    handleReduce3 = () => {
+      this.setState({expanded4: false});
     };
     render() {
         return (
             <div className="timeline">
-              <p className="headline">Working experience</p>
+              <p className="headline">Experiencia Laboral</p>
                 <div className="timeline-entry">
-                  <Card>
-                      <CardHeader title="Technology Consulting Analyst" subtitle="Accenture"/>
+                  <Card expanded={this.state.expanded1} onExpandChange={this.handleExpandChange}>
+                      <CardHeader title="Senior Software Developer" subtitle="ionIDe Telematics S.L."
+                        actAsExpander={true} showExpandableButton={true}/>
                       <CardText expandable={true}>
-                          October	2016 - October 2017. Development of Microservices, UX-Consulting.
-                          <br/><br/>
+                          Febrero	2016 - . Desarrollo de Aplicaciones Web, Ventas.
+                          / Aplicación React para iOS utilizando Cordova
+                          / Aplicación React|ExpressJS para Chrome dockerizada y corriendo en Windows 10 para cajeros
+                         <br/><br/>
                             <div className="timeline-entries">
                               <div className="timeline-entry-chip">
-                                <Chip>Angular 2</Chip>
+                                <Chip>React</Chip>
                               </div>
                               <div className="timeline-entry-chip">
                                 <Chip>Docker</Chip>
@@ -78,103 +90,109 @@ class TimelineComponent extends Component {
                                 <Chip>Jenkins</Chip>
                               </div>
                               <div className="timeline-entry-chip">
-                                <Chip>LESS</Chip>
+                                <Chip>Stylus, PostCSS</Chip>
                               </div>
                               <div className="timeline-entry-chip">
-                                <Chip>Java Spring</Chip>
+                                <Chip>Express</Chip>
                               </div>
                               <div className="timeline-entry-chip">
-                                <Chip>Foundation, Bootstrap</Chip>
+                                <Chip>Semantic-UI, Onsen-UI</Chip>
                               </div>
                               <div className="timeline-entry-chip">
-                                <Chip>Confluence, JIRA</Chip>
+                                <Chip>Slack, Trello</Chip>
                               </div>
                             </div>
                       </CardText>
                   </Card>
                 </div>
                   <div className="timeline-entry">
-                    <Card expanded={this.state.expanded1} onExpandChange={this.handleExpandChange}>
-                        <CardHeader title="Software Developer" subtitle="Testo	SE	&	Co.	KGaA"
+                    <Card expanded={this.state.expanded2} onExpandChange={this.handleExpandChange2}>
+                        <CardHeader title="Junior Software Developer" subtitle="ionIDe Telematics S.L."
                           actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            October	2016 - October 2017. Development of Microservices, UX-Consulting.
+                            Febrero	2014 - Enero 2016. Desarrollo de Aplicaciones .NET, Ventas.
+                            / Aplicación VB.NET para monitorizar hardware de un cajero (dispensador de
+                            monedas, lector de tarjetas RFID, impresora de tickets). Interfaz de usuario
+                            usando PHP|Jquery
+                            / Aplicación Jquery|ExpressJS para un dispositivo Debian. Gestión multimedia
+                            para pacientes e inclusión de aplicaciones clínicas
+                            / Aplicación C++ para manejar hardware de sonido y conectar con una Aplicación
+                            java que reconoce la voz del usuario. Proyecto de adaptabilidad para pacientes
+                            con disfunción motriz.
                             <br/><br/>
                               <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
-                                  <Chip>Angular 2</Chip>
+                                  <Chip>jQuery</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>Docker</Chip>
+                                  <Chip>Apache/PHP</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>Jenkins</Chip>
+                                  <Chip>Visual Studio</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>LESS</Chip>
+                                  <Chip>CSS</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>Java Spring</Chip>
+                                  <Chip>VB.NET</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>Foundation, Bootstrap</Chip>
+                                  <Chip>C/DLL</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>Confluence, JIRA</Chip>
+                                  <Chip>Hardware Drivers</Chip>
                                 </div>
                               </div>
                         </CardText>
                     </Card>
                   </div>
                   <div className="timeline-entry">
-                  <Card expanded={this.state.expanded2} onExpandChange={this.handleExpandChange2}>
-                      <CardHeader title="Student" subtitle="Testo	SE	&	Co.	KGaA"
+                  <Card expanded={this.state.expanded3} onExpandChange={this.handleExpandChange3}>
+                      <CardHeader title="Estudiante" subtitle="Universidad de Jaén"
                         actAsExpander={true} showExpandableButton={true}/>
                       <CardText expandable={true}>
-                          October 2013 - September 2016. Bachelor of Science (Business Engineering), process automation and management, web and software development. Thesis: Integration of CRM and marketing automation with Hybris E-Commerce.
-
+                          Septiembre 2006 - Febrero 2010. Ingeniería Técnica en Informática de Gestión.
                           <div className="timeline-entries">
                             <div className="timeline-entry-chip">
-                              <Chip>BPMN</Chip>
+                              <Chip>C/C++</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>SharePoint</Chip>
+                              <Chip>Oracle</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>Nintex</Chip>
+                              <Chip>Unix/Linux</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>Marketo</Chip>
+                              <Chip>Java</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>Microsoft Dynamics</Chip>
+                              <Chip>Redes Neuronales</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>Hybris</Chip>
+                              <Chip>Matlab</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>First Spirit</Chip>
+                              <Chip>Comienzos prometedores</Chip>
                             </div>
                           </div>
                       </CardText>
                   </Card>
                 </div>
                 <div className="timeline-entry">
-                  <Card expanded={this.state.expanded3} onExpandChange={this.handleExpandChange3}>
-                      <CardHeader title="Trainee" subtitle="Testo	Instruments	(Shenzhen)	Co.	Ltd"
+                  <Card expanded={this.state.expanded4} onExpandChange={this.handleExpandChange4}>
+                      <CardHeader title="Aprendiz" subtitle="Tevisur SA"
                         actAsExpander={true} showExpandableButton={true}/>
                       <CardText expandable={true}>
-                          January	2015	-	March	2015. Installation of a quality management system according to ISO 9001 for the subsidiary in Shenzhen.
-
+                          Septiembre 2007	-	Marzo	2008. Reparación de equipos informáticos.
                           <div className="timeline-entries">
                             <div className="timeline-entry-chip">
-                              <Chip>Confluence</Chip>
+                              <Chip>Windows</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>ISO 9001</Chip>
+                              <Chip>Harware</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>BPMN</Chip>
+                              <Chip>Mantenimiento</Chip>
                             </div>
                           </div>
                       </CardText>

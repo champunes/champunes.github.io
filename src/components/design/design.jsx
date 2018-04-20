@@ -10,13 +10,25 @@ class DesignComponent extends Component {
     render() {
         return (
           <div className="design">
-            <p className="headline">User Experience and Design</p>
+            <p className="headline">Experiencia de usuario y programación</p>
             <p className="text-justify">
-              Through my parents business @fotolia, at the age of 13, I fell in love with Photoshop.
+              Desde que en la adolescencia un familiar me introdujo al mundo de la programación (Basic, C, LUA) he sabido
+              que iba a terminar dedicándome al mundo del desarrollo.
 
-              Ever since, I tried to make everything fancy.
+              Mis primeros desarrollos serios fueron plugins escritos en LUA para un conocido videojuego multijugador,
+              el cual permitía desarrollar herramientas externas para el mismo. Todo ello ocurría al tiempo que estudiaba
+              en la universidad.
+              
+              Después de unos años trabajando en entornos Windows y sobre .NET (aunque realizando interfaces de usuario web),
+              y diseñando aplicaciones para el departamento de ventas que corrian en cajeros con dispensadores de monedas,
+              mi empresa se unió a la ola del desarrollo web y fué cuando descubrí Node y se abrió un nuevo mundo para mí.
 
-              Nowadays, with a user-centered mindset, I try to develop intuitive, mobile and content first applications.
+              Desde entonces he intentado mantenerme al día de los avances que se van realizando en tecnologías que parece ya
+              cotidianas como Express o React (si es que es posible mantenerse al día con una tecnología que avanza casi a diario).
+
+              En los últimos tiempos he entrado en otro mundo (quizás paralelo, o no). Concretamente he descubierto el desarrollo
+              de aplicaciones para dispositivos móviles (en mi caso, iPads) utilizando un entorno de desarrollo para aplicaciones
+              híbridas: Apache Cordova
 
             </p>
 
@@ -25,7 +37,7 @@ class DesignComponent extends Component {
                   checkedIcon={<ActionFavorite />}
                   uncheckedIcon={<ActionFavoriteBorder />}
                   iconStyle={{"fill":"#A80202"}}
-                  label="UX-Consulting"
+                  label="Ventas"
                 />
               </div>
               <div className="design-checkbox">
@@ -33,7 +45,7 @@ class DesignComponent extends Component {
                 checkedIcon={<ActionFavorite />}
                 uncheckedIcon={<ActionFavoriteBorder />}
                 iconStyle={{"fill":"#A80202"}}
-                label="Adobe Photoshop"
+                label="Desarrollo Web"
               />
             </div>
             <div className="design-checkbox">
@@ -41,7 +53,7 @@ class DesignComponent extends Component {
                 checkedIcon={<ActionFavorite />}
                 uncheckedIcon={<ActionFavoriteBorder />}
                 iconStyle={{"fill":"#A80202"}}
-                label="Adobe Illustrator"
+                label="UI Frameworks"
               />
             </div>
             <div className="design-checkbox">
@@ -49,7 +61,7 @@ class DesignComponent extends Component {
                 checkedIcon={<ActionFavorite />}
                 uncheckedIcon={<ActionFavoriteBorder />}
                 iconStyle={{"fill":"#A80202"}}
-                label="Blender"
+                label="Desarrollo Contínuo"
               />
           </div>
           <div className="design-checkbox">
@@ -57,7 +69,7 @@ class DesignComponent extends Component {
               checkedIcon={<ActionFavorite />}
               uncheckedIcon={<ActionFavoriteBorder />}
               iconStyle={{"fill":"#A80202"}}
-              label="Digital Painting"
+              label="Aplicaciones Web Progresivas"
             />
         </div>
 

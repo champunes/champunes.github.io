@@ -12,7 +12,7 @@ class ProgrammingComponent extends Component {
         };
         return (
             <div className="programming">
-              <p className="headline"> Programming skills</p>
+              <p className="headline"> Habilidades de programación</p>
                 <div className="programming-console">
                     <Paper zDepth={3} style={style}>
                         <div className="console-header">
@@ -52,32 +52,32 @@ class ProgrammingComponent extends Component {
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Angular 2</span>
+                                            <span className="html-2">Express.js</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Mocha</span>
+                                            <span className="html-2">Mocha, Jest</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Webpack, Babel</span>
+                                            <span className="html-2">Webpack, Babel, Gulp, Browserify</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Docker</span>
+                                            <span className="html-2">Docker, Docker Swarm</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Linux</span>
+                                            <span className="html-2">Linux, Windows 10</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">LESS, SASS</span>
+                                            <span className="html-2">Stylus</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>

@@ -2,13 +2,13 @@
   <img src="icon.png" width="150px" />
 </p>
 
-# personal-portfolio
+# champunes.github.io
 
-[Demo](https://salomonelli.github.io/personal-portfolio/)
+(https://champunes.github.io/)
 
-This portfolio is made with [React](https://github.com/facebook/react), [Material UI](https://github.com/callemall/material-ui) and lots of love.
-Although it is my personal portfolio, feel free to fork and have fun with it.
+This portfolio is made with [React](https://github.com/facebook/react), [Material UI](https://github.com/callemall/material-ui).
 
+It has been forked from the nice work of Sara (https://salomonelli.github.io/personal-portfolio/)
 ## Installation
 
 1. Run `npm i`.
