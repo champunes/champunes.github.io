@@ -4,7 +4,7 @@
 
 # champunes.github.io
 
-(https://champunes.github.io/)
+(https://champunes.github.io/personal-portfolio)
 
 This portfolio is made with [React](https://github.com/facebook/react), [Material UI](https://github.com/callemall/material-ui).
 
